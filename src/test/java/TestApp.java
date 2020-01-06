@@ -82,6 +82,8 @@ public class TestApp {
         SelectorsHelp.button.click();
         SelectorsHelp.notification.$(byText("Успешно!")).waitUntil(Condition.visible, 15000);
         SelectorsHelp.notification.$(byText(GeneratorData.PositiveData.date)).waitUntil(Condition.visible, 15000);
+        SelectorsHelp.dateField.$(".input__control").setValue("\b\b\b\b\b\b\b\b");
+        SelectorsHelp.dateField.$(".input__control").setValue(GeneratorData.PositiveData.date);
         SelectorsHelp.button.click();
         SelectorsHelp.dateField.$(".input__control").setValue("\b\b\b\b\b\b\b\b");
         SelectorsHelp.dateField.$(".input__control").setValue(GeneratorData.NegativeData.date);
